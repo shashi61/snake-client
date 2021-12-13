@@ -10,7 +10,8 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
   conn.on("connect", (data) => {
-   console.log("connected");
+   console.log("Successfully connected to the game server.");
+   conn.write("Name:SBS");
    setTimeout(()=>{
     console.log("you ded cuz you idled");
    }, 5000);
