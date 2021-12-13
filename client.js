@@ -11,7 +11,12 @@ const connect = function () {
   conn.setEncoding("utf8");
   conn.on("connect", (data) => {
    console.log("Successfully connected to the game server.");
-   conn.write("Name:SBS");
+   conn.write("Name: SBS");
+//    conn.write("Move: up");
+//    conn.write("Move: left");
+//    conn.write("Move: down");
+//    conn.write("Move: right");
+
    setTimeout(()=>{
     console.log("you ded cuz you idled");
    }, 5000);
